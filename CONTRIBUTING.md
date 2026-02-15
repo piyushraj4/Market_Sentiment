@@ -103,6 +103,6 @@ Some ideas for contributions:
 
 If you have questions, feel free to:
 - Open a discussion issue
-- Reach out via email at [your-email@example.com]
+- Reach out via email at [piyush.35raj@gmail.com]
 
 Thank you for contributing! 🙏
