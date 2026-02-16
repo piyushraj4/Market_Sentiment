@@ -1,4 +1,4 @@
-# 📊 Market Sentiment Analysis
+#  Market Sentiment Analysis
 
 A comprehensive financial sentiment analysis tool that scrapes news from multiple sources, applies FinBERT deep learning for sentiment classification, and correlates sentiment with stock price movements to identify predictive signals.
 
@@ -6,7 +6,7 @@ A comprehensive financial sentiment analysis tool that scrapes news from multipl
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.24+-FF4B4B.svg)](https://streamlit.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🎯 Key Features
+##  Key Features
 
 - **Multi-Source News Aggregation**: Collects 1000+ articles from NewsAPI, Google News RSS, and 9 major financial feeds
 - **FinBERT Sentiment Analysis**: State-of-the-art transformer model (ProsusAI/finbert) for financial text classification
@@ -15,7 +15,7 @@ A comprehensive financial sentiment analysis tool that scrapes news from multipl
 - **Interactive Dashboard**: Real-time Streamlit dashboard with visualizations and insights
 - **Scalable Architecture**: Modular design with caching, batch processing, and error handling
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -49,7 +49,7 @@ python -m streamlit run dashboard.py
 
 The dashboard will open at `http://localhost:8501`.
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 market_sentiment/
@@ -68,7 +68,7 @@ market_sentiment/
 └── .gitignore                # Excludes .env, data/, cache
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 Edit `config.py` to customize:
 
@@ -90,7 +90,7 @@ Or pass arguments at runtime:
 python run_pipeline.py --tickers AAPL MSFT --days 60
 ```
 
-## 📊 Dashboard Features
+##  Dashboard Features
 
 ### 1. Sentiment Feed
 - Recent headlines with color-coded sentiment scores
@@ -113,7 +113,7 @@ python run_pipeline.py --tickers AAPL MSFT --days 60
 - **Event Study**: Average returns on high vs. low sentiment days
 - **Top Bullish/Bearish Headlines**: Extreme sentiment examples
 
-## 🧠 Technical Approach
+##  Technical Approach
 
 ### 1. Data Collection
 - **NewsAPI**: Everything endpoint with dual queries per ticker (company + symbol)
@@ -141,7 +141,7 @@ python run_pipeline.py --tickers AAPL MSFT --days 60
   - GOOGL: r=+0.502, p=0.047 (next-day, **predictive**)
 - **Event study**: High sentiment days → +2.03% returns (AAPL), +0.81% (MSFT)
 
-## ⚙️ Advanced Usage
+##  Advanced Usage
 
 ### Custom Tickers & Periods
 ```bash
@@ -177,14 +177,14 @@ tests/test_sentiment.py::test_model_loading PASSED
 ==================== 20 passed in 12.34s ====================
 ```
 
-## 📈 Performance
+##  Performance
 
 - **News Collection**: ~30 sec (1400+ articles via 3 sources)
 - **Sentiment Analysis**: ~60 sec (FinBERT batch inference on CPU)
 - **Correlation Engine**: <1 sec (90 data points)
 - **Total Pipeline**: **~90 seconds** end-to-end
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions welcome! Please:
 
@@ -194,11 +194,11 @@ Contributions welcome! Please:
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **FinBERT**: [ProsusAI/finbert](https://huggingface.co/ProsusAI/finbert) - Financial sentiment classification
 - **NewsAPI**: [newsapi.org](https://newsapi.org/) - News aggregation service
@@ -211,4 +211,4 @@ For questions or suggestions, please open an issue or contact me at [piyush.35ra
 
 ---
 
-**⭐ If you found this project helpful, please give it a star!**
+** If you found this project helpful, please give it a star!**
